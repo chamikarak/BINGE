@@ -1,0 +1,74 @@
+body,html{
+	height:100%;
+	margin:0px;
+	background-image: url("../Images/Background.jpg");
+	height: 80%;
+	background-position: center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	
+}
+
+.container {
+	background-color: rgba(151, 151, 151,0.8);
+	color: #fff;
+	position: relative;
+	border-style: none;
+	border-radius: 10px;
+	font-size: 80px;
+	text-align: center;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+	font-weight: 900;
+	
+}
+.link{
+	background-color: rgba(151, 151, 151,0.8);
+	color: #fff;
+	font-size:16px;
+	text-align: center;
+	width:100%;
+	position:fixed;
+    bottom:0;
+}
+
+
+@-webkit-keyframes glow {
+	from {
+		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d1fd0c, 0 0 40px #0cff65, 0 0 50px #86e600, 0 0 60px #09da4b, 0 0 70px #0000e6;
+	}
+	
+	to {
+		text-shadow: 0 0 20px #fff, 0 0 30px #00ffd9, 0 0 40px #00ffd9, 0 0 50px#00ffd9, 0 0 60px #00ffd9, 0 0 70px #00ffd9, 0 0 80px #00ffd9;
+	}
+}
+
+h1{
+	font-family: "Comic Sans";
+	font-size: 80px;
+	font-weight: 900;
+	
+}
+h2,p{
+	font-family: Century Gothic;
+	font-size: 25px;
+	font-weight: normal;    
+}
+#titleContainer{
+	margin-top:40px;
+	margin-left:40%;
+	border-style: none;
+	border-radius: 10px;
+	width:300px;
+}
+#catchPhraseContainer{
+	margin-left:40%;
+	margin-bottom: 40px;
+	width:300px;
+}
+#namesContainer{
+	margin-left:38%;
+	width:350px;                
+}
+

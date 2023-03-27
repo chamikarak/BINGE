@@ -1,0 +1,113 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+      	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>LEAVE US A COMMENT</title>
+		<link rel = "stylesheet" type = "text/css" href = "../CSS Files/CommentFormStyle.css" >
+		<link rel = "stylesheet" type = "text/css" href = "../CSS Files/NavBarStyle.css" >
+			
+	</head>
+		
+	<body>
+		<script src="../JavaScript Files/CommentFormJS.js"> </script>
+		<div id="header">
+			<div id=title>
+				<img src="../Images/logo.png" width="350pt" alt="Binge logo">
+				
+				<font style="font-size: 20pt; float: right; padding-right: 70pt;">
+					<br><input id="textbox" type="text" name="sname" placeholder="Search">
+				</font>
+			</div>
+			<br>
+			<div class="dropdown" id=navbar align="center">
+				<li><button><a href="MainPage.html">Home</a></button>|</li>
+				<li><button class="dropbtn">Select Genre
+						<div class="dropdown-content">
+							<a href="ContentSitcoms.html">Sitcoms</a>
+							<a href="ContentFantasy.html"> Fantasy</a>
+							<a href="ContentDrama.html">Drama</a>
+						</div>
+					</button>|
+				</li>
+				<li><button><a href="ProductForm.html">Merch</a></button>|</li>
+				<li><button><a href="QuizIntro.html">Take Quiz</a></button>|</li>
+				<li><button><a href="CommentForm.html">Contact Us</a></button>|</li>
+				<li><button><a href="AuthorPage.html">About the Authors</a></button></li>
+			</div> 
+		</div>
+        <a name="top"></a>
+	
+		<br><br><br><br><br>
+		<div class="divTwo">
+			<h2 class="title2">Send us your feedback!</h2>
+			<center>We couldn't imagine anything better than to get notification from you! If you don't mind, pause for a minute to tell us about your experience.</center>
+		</div>
+		<br>
+		<section class="content3" id="content2">
+			<div class="container">
+					<form method="post" action="#" class="comment-form" name="myForm" >
+						<div class="row">
+							<div class="column1">
+								<label for="fname">First Name    :</label>
+							</div>
+							<div class="column2">
+								<input type="text" id="fname" name="firstname" placeholder="Your First Name..">
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="column1">
+								<label for="lname">Last Name   :</label>
+							</div>
+							<div class="column2">
+								<input type="text" id="lname" name="lastname" placeholder="Your Last name..">
+							</div>
+						</div>
+			
+						<div class="row">
+							<div class="column1">
+								<label for="emailAdress">Email Adress:</label>
+							</div>
+							<div class="column2">	
+								<input type="email" id="emailAdress" name="email"  placeholder="abcd@gmail.com">
+							</div>
+						</div>
+						
+						
+						<div class="row">
+							<div class="column1">
+								<label for="idea">Comment:</label>
+							</div>
+							<div class="column2">	
+								<textarea id="idea" name="comment" placeholder="Typeyour feedback here..."></textarea>	
+							</div>
+							
+						</div><br>
+						
+						<div class="row">
+							<div class="column1">
+								<label for "rating">Rate Us:</label>
+							</div>
+							<div class="column2">
+								<input type="radio" name="rating" value="Excellent">Excellent<br>
+								<input type="radio" name="rating" value="good">good<br>
+								<input type="radio" name="rating" value="Satisfied">Satisfied</br>
+								<input type="radio" name="rating" value="Not-Satisfied">Not-Satisfied</br>
+							</div>
+
+							<input type="submit" value="Submit" onclick="validateForm()">
+						</div>	
+					</form>	
+			</div>
+		</section>
+
+		<a href="#top" style="float: right; margin-right: 4%; font-size: 18px;">Back to top</a><br><br>
+        <footer>
+            Last updated: 23/03/2020<br>
+			Page Editor:<a href="Student2.html">Chamikara Kariyapperuma </a><br>
+			Copyright &copy; All rights reserved
+        </footer>
+		<script src="../JavaScript Files/NavBarJS.js"> </script>	
+	</body>
+</html>

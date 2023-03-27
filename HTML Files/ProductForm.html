@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            BINGE MERCH
+        </title>
+        <link rel="stylesheet" type="text/css" href="../CSS Files/NavBarStyle.css">
+        <link rel="stylesheet" type="text/css" href="../CSS Files/ProductFormStyle.css">
+        
+    </head>
+    <body id="a">
+        <script src="../JavaScript Files/ProductFormJS.js"> </script>
+        <!--header section-->
+        <div id="header">
+			<div id=title>
+				<img src="../Images/logo.png" width="350pt" alt="Binge logo">
+				
+				<font style="font-size: 20pt; float: right; padding-right: 70pt;">
+					<br><input id="textbox" type="text" name="sname" placeholder="Search">
+				</font>
+			</div>
+			<br>
+			<div class="dropdown" id=navbar align="center">
+				<li><button><a href="MainPage.html">Home</a></button>|</li>
+				<li><button class="dropbtn">Select Genre
+						<div class="dropdown-content">
+							<a href="ContentSitcoms.html">Sitcoms</a>
+							<a href="ContentFantasy.html"> Fantasy</a>
+							<a href="ContentDrama.html">Drama</a>
+						</div>
+					</button>|
+				</li>
+				<li><button><a href="ProductForm.html">Merch</a></button>|</li>
+				<li><button><a href="QuizIntro.html">Take Quiz</a></button>|</li>
+				<li><button><a href="CommentForm.html">Contact Us</a></button>|</li>
+				<li><button><a href="AuthorPage.html">About the Authors</a></button></li>
+			</div> 
+		</div>
+        <a name="top"></a>
+        
+        <br><br>
+        <!--font-size change buttons-->
+        <div class="font-size">
+            <button onclick="decreaseFontSize()" id="size-decrese"> A-</button>
+            <button onclick="increaseFontSize()"; id="size-increase">A+</button>
+        </div>
+        <div class="intro">
+            &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;<h1>GET YOUR FAN MERCH</h1><br>
+            <h3>Find awesome merchandise for all your favourite TV series right here!</h2>
+            <hr size="4">
+        </div>
+        
+        <div class="container">
+            <form action="" method="POST">
+                <!--personal details scetion-->
+                <div class="details">
+                    <fieldset>
+                        <legend>Personal Details</legend>
+                        <label for="fname">First Name</label><br>
+                        <input type="text" name="firstname" id="fname" placeholder="Enter first name" class="text">
+                        <br><br>
+                        <label for="lname">Last Name</label><br>
+                        <input type="text" name="lastname" id="lname" placeholder="Enter last name" class="text">
+                        <br><br>
+                        <label for="address"> Shipping Address</label><br>
+                        <textarea rows="4" name="address" id="address" placeholder="Enter shipping address here"></textarea>
+                        <br><br>
+                        <label for="email">Email Address</label><br>
+                        <input type="email" name="email" id="email" placeholder="Enter valid email" class="text">
+                        <br><br>
+                        <label for="cardno">Credit card number</label> &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <label for="cvv">Security code</label><br>
+                        <input type="password" name="cardno" id="cardno" class="text" style="width:50%" placeholder="*** *** *** ***"> &nbsp; &nbsp; &nbsp;
+                        <input type="text" name="cvv" id="cvv" class="text" style="width: 35%" placeholder="CVV">
+                        <br><br>
+                        <label for="exmonth">Card Expiration </label><br>
+                        <input type="text" id="exmonth" name="exmonth" class="text"  placeholder="MM / YY" onfocus="change(this);">
+                        <br><br>
+                        <label for="promo">Promo-code</label><br>
+                        <input type="text" name="promo" id="promo" class="text" placeholder="Enter promo code from quiz">
+                        <br><br>
+                    </fieldset>  
+                </div>   
+                <!--merchandise section-->  
+                <div id="products">
+                    <!--posters-->
+                    <fieldset class="row">
+                        <legend>Posters</legend>
+                        <!--item 1-->
+                        <div class="items">
+                            <img class="image" src="../Images/GOT poster.jpg" alt="Game of thrones poster- Danaerys">
+                            <div class="caption">
+                                <h4>Game of Thrones</h4>
+                                <div>
+                                    <span class="price">10$</span><br>
+                                    Quantity &nbsp;<input type="number" value="0" min="1" max="10" class="quantity" id="product1"><br>
+                                </div>
+                            </div>
+                            <button onclick="getProduct(1);" id="btn1">
+                                Add to Cart
+                            </button>
+                        </div>
+                        <!--item 2-->
+                        <div class="items">
+                            <img class="image" src="../Images/friends.jpg" alt="FRIENDS poster">
+                            <div class="caption">
+                                <h4>FRIENDS</h4>
+                                <div>
+                                    <span class="price">10$</span><br>
+                                    Quantity &nbsp;<input type="number" value="0" min="0" max="10" class="quantity" id="product2"><br>
+                                </div>
+                            </div>
+                            <button onclick="getProduct(2);" id="btn2">
+                                Add to Cart
+                            </button>
+                        </div>  
+                        <!--item 3--> 
+                        <div class="items">
+                            <img class="image" src="../Images/riverdale poster.jpg" alt="Riverdale poster">
+                            <div class="caption">
+                                <h4>Riverdale</h4>
+                                <div>
+                                  <span class="price">10$</span><br>
+                                    Quantity &nbsp;<input type="number" value="0" min="0" max="10" class="quantity" id="product3"><br>
+                                </div>
+                            </div>
+                            <button onclick="getProduct(3);" id="btn3">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </fieldset>    
+                    <!--clothing-->
+                    <fieldset class="row">
+                        <legend>Clothing</legend>
+                        <!--item 4-->
+                        <div class="items">
+                            <img class="image" src="../Images/witcher tshirt.jpg" alt="The Witcher tshirt">
+                            <div class="caption">
+                                <h4 class="item">The Witcher</h4>
+                                <div>
+                                    <span class="price">15$</span><br>
+                                Quantity &nbsp;<input type="number" value="0" min="0" max="10" class="quantity" id="product4"><br>
+                                Size &nbsp; &nbsp; &nbsp; &nbsp;
+                                <select id="clothing1" >
+                                    <option value="S" selected>S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                    <option value="XXL">2XL</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button onclick="getProduct(4);" id="btn4">
+                                Add to Cart
+                            </button>
+                        </div>
+                        <!--item 5-->
+                        <div class="items">
+                            <img class="image" src="../Images/b99 tshirt.jpg" alt="Brooklyn 99 tshirt">
+                            <div class="caption">
+                                <h4>Brooklyn 99</h4>
+                                <div>
+                                    <span class="price"> 15$</span><br>
+                                Quantity &nbsp;<input type="number" value="0" min="0" max="10" class="quantity" id="product5"><br>
+                                Size &nbsp; &nbsp; &nbsp; &nbsp;
+                                <select id="clothing2" >
+                                    <option value="S" selected>S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                    <option value="XXL">2XL</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button onclick="getProduct(5);" id="btn5"> 
+                                Add to Cart
+                            </button>
+                        </div>
+                        <!--item 6-->
+                        <div class="items">
+                            <img class="image" src="../Images/riverdale tshirt.jpg" alt="Riverdale- Southside Serpents Jacket">
+                            <div class="caption">
+                                <h4>Riverdale Jacket</h4>
+                                <div>
+                                    <span class="price">25$</span><br>
+                                Quantity &nbsp;<input type="number" value="0" min="0" max="10" class="quantity" id="product6"><br>
+                                Size &nbsp; &nbsp; &nbsp; &nbsp;
+                                <select id="clothing3" >
+                                    <option value="S" selected>S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                    <option value="XXL">2XL</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button  onclick="getProduct(6);" id="btn6">
+                                Add to Cart
+                            </button>
+                        </div>
+                        <br>
+                    </fieldset>
+                    <br>
+                    <!--submit and reset buttons-->
+                    <div class="order">
+                        <input type="reset" value="Clear order" class="end-button" id="reset" onclick="resetForm();">&nbsp; &nbsp; &nbsp;
+                        <input type="submit" value="Place order" class="end-button" id="order" onclick="return isEmpty();">
+                    </div>          
+                </div> 
+            </form>
+        </div> 
+        <br><br><br>
+        <!--back to top link-->
+        <a href="#top" style="float: right; margin-right: 20px; font-size: 18px;">Back to top</a><br><br>
+        <footer>
+            Last updated: 23/03/2020<br>
+            Page Editor:<a href="Student1.html"> Asiri Ekanayake </a><br>
+            Copyright &copy; All rights reserved
+        </footer>
+        <script src="../JavaScript Files/NavBarJS.js"> </script>
+    </body>
+</html>

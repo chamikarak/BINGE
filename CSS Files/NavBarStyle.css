@@ -1,0 +1,125 @@
+*{
+	margin: 0;
+	font-family: Century Gothic;
+	color: #fff;
+}
+
+body{
+    background-image: linear-gradient(rgb(27, 23, 23), #003, rgb(22, 22, 70),rgb(13, 13, 85));
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+		
+}
+
+
+#title{
+    width:100%;
+	align-content: center;
+	border: 1pt #333 solid;
+	padding-bottom: 15pt;
+	color: #000;
+	font-family: Bernard MT Condensed;
+	font-size: 40pt;
+	padding-left: 40pt;
+	background: linear-gradient(#222, #111);
+}
+
+#navbar{
+	width:90%;
+	background: linear-gradient(#222, #111);
+	margin-left: 35pt;
+	margin-right: 35pt;
+	border: 1pt #333 solid;
+	border-radius: 10px;
+	margin-top: -40pt;
+}
+
+li{
+
+	color: #fff;
+	display:inline;
+}
+
+button{
+	margin: 5pt;
+	border: 1pt rgba(0,0,0,0) solid;
+	color: #fff;
+	background-color:rgba(0, 0, 0, 0);
+	height: 35px;
+	width: 140px;
+	border-radius: 10px;
+	transition: background-color 0.4s, border 0.4s;
+}
+
+button:hover{
+	background-color: #99f;
+	border: 1pt rgba(255,255,255,0) solid;
+	cursor: pointer;
+}
+button a{
+	text-decoration:none;
+}
+#textbox{
+	transition: box-shadow 0.4s;
+	color: #666;
+	padding: 5pt;
+	border-radius: 10pt;
+	width: 200pt;
+}
+
+#textbox:hover{
+	box-shadow: 0pt 0pt 1000pt #fff;
+}
+
+.dropdown-content {
+	border-radius: 12pt;
+	display: none;
+	margin-top: 8pt;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+	border-radius: 12pt;}
+
+.dropbtn:hover .dropdown-content {
+	display: block;
+}
+
+#content{
+	margin: 60pt;
+}
+
+hr{
+	margin: 20pt;
+	background-color: rgba(255, 255, 255, 0.3);
+	border: 0pt;
+}
+footer{
+   background-color: #111;
+   text-align: center;
+   border-top-style: solid;
+   border-top-width: 2px;
+   border-top-color:rgba(151, 151, 151,0.6);
+   padding-top:10px;
+   padding-bottom:8px;
+   width:100%;
+   font-size: 14px;
+}
+
